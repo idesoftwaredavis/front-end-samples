@@ -1,0 +1,64 @@
+-- GENERALES
+
+-margin:
+-padding:
+-margin (0px auto):
+-min-wight:
+-width:
+
+
+-- FUENTES
+
+Para colocar distintas fuentes en una pagina web, se necesita el decorador:
+
+@font-face -> Contiene:
+
+-font-family
+-src : url(<ruta relativa>)
+-src: url(<ruta relativa>) format(<nombre del formato>), ( Tupla )
+-font-weight
+-font-style
+
+Nota : Atributos de referencia, utilizados en los samples de Udemy.
+
+Ejemplo:
+
+@font-face {
+  font-family: "nevis";
+  src: url("../fonts/nevis.eot");
+  src: url("../fonts/nevis.eot?#iefix") format('embedded-opentype'),
+       url("../fonts/nevis.woff") format('woff'),
+       url("../fonts/nevis.ttf") format('truetype'),
+       url("../fonts/nevis.svg") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+-- TEXTO
+
+Para darle estilos a textos, se pueden utilizar las siguientes propiedades:
+
+-text-align : Centra el elemento al medio del contenedor
+-text-transform: Transforma el texto en mayuscula, minuscula, capitalize, etc.
+-font-family: Establece la fuente del texto
+-font-size: Tamaño del texto
+-text-decoration: Me sirve para que los links no tengan ningun estilo por defecto
+-letter-spacing: Le da un Espaciado por letras de una palabra
+-font-weight:
+-font-style:
+-text-shadow : Estilo Tridimensional, le da un sombreado a un texto.
+--->   text-shadow: 0px 2px 1px #333333;
+
+-- TRANSITIONS
+
+- transition ( all 1000ms) : Efecto transition en el elemento a 1000 milisegundos.
+
+-- seudoclases
+
+- first-child: Selecciona o indica el primer elemento del elemento padre. Ejemplo : #nav > ul > li > a:first-child{}
+
+
+-- POSITIONS
+
+-absolute : Me sirve para que no desfigure el sitio web, es decir, simplemente que sobresalga cuando uno lo quiera ( Por ejemplo, el hover ) .
+
